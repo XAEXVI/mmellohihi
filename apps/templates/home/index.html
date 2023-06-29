@@ -59,9 +59,10 @@
     </style>
   
     <div class="page-header min-vh-75">
-      <video autoplay muted loop preload="auto">
+      <video autoplay muted loop>
         <source src="{{ ASSETS_ROOT }}/img/imgsm/vídeofundo.mp4" type="video/mp4">
-      </video>
+      </video> <!-- Closed the <video> tag -->
+      <span class="mask opacity-3" style="background-color: rgba(16, 20, 16, 0.808);"></span>
     </div>
   </header>
   
