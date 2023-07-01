@@ -58,15 +58,14 @@
       }
     </style>
   
-    <div class="page-header min-vh-75">
-      <video autoplay muted loop>
-        <source src="{{ ASSETS_ROOT }}/img/imgsm/vídeofundo.mp4" type="video/mp4">
-      </video> <!-- Closed the <video> tag -->
-      <span class="mask opacity-3" style="background-color: rgba(16, 20, 16, 0.808);"></span>
-    </div>
+      <div class="page-header min-vh-75">
+        <div class="video-container">
+            <video width="1860" height="800" src="{{ ASSETS_ROOT }}/img/imgsm/VIDEOFUNDO.mp4" autoplay loop muted></video>
+        </div>
+      </div>
   </header>
   
-  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6" style="background-color: #242424;">
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
     <span style="background-color: rgb(29, 29, 29);"></span>
     <section class="pt-3 pb-4" id="count-stats">
       <div class="container">
@@ -267,40 +266,46 @@
   </div>
   <footer class="footer pt-5 mt-5">
     <div class="container">
-      <div class=" row">
+      <div class="row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
+            <a href="#">
               <img src="{{ ASSETS_ROOT }}/img/imgsm/mmello_logo_site_horizontal_png.png" alt="main_logo">
               <img src="{{ ASSETS_ROOT }}/img/imgsm/abracelogobranca.png" alt="Image description" width="141" height="71">
             </a>
           </div>
         </div>
-        <div class="col-md-2 col-sm-6 col-6">
+        <div class="col-md-2 col-sm-6 col-6" >
           <div>
-            <a href="/about-us.html" class="text-sm"><h6>Team</h6></a>
+            <a href="/author.html" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Mission</h6></a>
           </div>
         </div>
         <div class="col-md-2 col-sm-6 col-6">
           <div>
-            <a href="/Gallery.html" class="text-sm"><h6>Gallery</h6></a>
+            <a href="/about-us.html" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Team</h6></a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div>
+            <a href="https://example.com" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Gallery</h6></a>
           </div>
         </div>
         <div class="col-md-2 col-sm-6 col-6 me-auto">
           <div>
-            <a href="/contact-us.html" class="text-sm"><h6>Contact us</h6></a>
+            <a href="https://example.com" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Contact us</h6></a>
           </div>
         </div>
-        
         <div class="col-12">
           <div class="text-center">
-            <p class="text-dark my-4 text-sm font-weight-normal">
-              &copy; <a href="https://bit.ly/3fKQZaL" target="_blank">MMello</a> - Coded By Reinelt
+            <p class="text-dark my-4 text-sm font-weight-normal" style="color: #ebebeb;">
+              <a href="https://bit.ly/3fKQZaL" target="_blank" style="color: #ebebeb;">© MMello</a><span style="color: #ebebeb;">- Coded By Reinelt</span>
             </p>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  
 
   <!--   Core JS Files   -->
   <script src="{{ ASSETS_ROOT }}/js/core/popper.min.js" type="text/javascript"></script>

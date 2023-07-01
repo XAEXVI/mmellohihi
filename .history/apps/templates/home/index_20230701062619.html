@@ -1,0 +1,358 @@
+<!--
+=========================================================
+* Material Kit 2 - v3.0.0
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ ASSETS_ROOT }}/img/imgsm/1145.jpg">
+  <link rel="icon" type="image/png" href="{{ ASSETS_ROOT }}/img/imgsm/1145.jpg">
+
+  <title>
+    MMello
+  </title>
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="{{ ASSETS_ROOT }}/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="{{ ASSETS_ROOT }}/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="{{ ASSETS_ROOT }}/css/material-kit.css?v=3.0.0" rel="stylesheet" />
+
+</head>
+<body class="presentation-page bg-blue-200" style="background-color: #1a1a1a;">
+
+  {% include 'includes/navigation.html' %}
+
+  <header class="header-2">
+    <style>
+      .page-header {
+        position: relative;
+        width: 100%; /* Adjusted width to make it responsive */
+        height: auto; /* Removed fixed height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .page-header video {
+        max-width: 100%; /* Adjusted width to make it responsive */
+        height: auto; /* Removed fixed height */
+        object-fit: cover;
+      }
+    </style>
+  
+      <div class="page-header min-vh-75">
+        <div class="video-container">
+            <video width="1860" height="800" src="{{ ASSETS_ROOT }}/img/imgsm/VIDEOFUNDO.mp4" autoplay loop muted></video>
+        </div>
+      </div>
+  </header>
+  
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <span style="background-color: rgb(29, 29, 29);"></span>
+    <section class="pt-3 pb-4" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto py-3">
+            <div class="row">
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 style="color:#04db04;" ><span id="state1" countTo="2000">0</span>+</h1>
+                  <h5 class="mt-3">Stands built</h5>
+                  <p class="text-sm font-weight-normal">From scenography, design, to technologies, you are covered,</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4 position-relative">
+                <div class="p-3 text-center">
+                  <h1 style="color:#04db04;" > <span id="state2" countTo="25">0</span>+</h1>
+                  <h5 class="mt-3">Years of history</h5>
+                  <p class="text-sm font-weight-normal">More than 25 years on the market making client's dreams come true.</p>
+                </div>
+                <hr class="vertical dark">
+              </div>
+              <div class="col-md-4">
+                <div class="p-3 text-center">
+                  <h1 style="color:#04db04;" id="state3" countTo="0">0</h1>
+                  <h5 class="mt-3">Limitations</h5>
+                  <p class="text-sm font-weight-normal">From Brazil to all over the world, just tell us the time and place, we will be there.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-5 py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+            <div class="rotating-card-container">
+              <div class="card card-rotate card-background shadow mt-md-0 mt-5">
+                <div class="front front-background">
+                  <div class="card-body py-7 text-center" style="background-image: linear-gradient(10deg, #13a100 5%, #50ff39 100%);">
+                    <i class="material-icons text-white text-4xl my-3">touch_app</i>
+                    <h3 class="text-white">All made <br /> at your specs</h3>
+                    <p class="text-white opacity-8" style="font-size: 16px;">All the guidance that you need for developing your stand with your own features.</p>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url('{{ ASSETS_ROOT }}/img/imgsm/ryan-ancill-nGsVMkRatgM-unsplash.jpg'); background-size: cover;">
+                  <div class="card-body pt-7 text-center" style="background-image: linear-gradient(85deg, #242424 0%, #242424 0%);">
+                    <h3 class="text-white">Discover More</h3>
+                    <p class="text-white opacity-8">Take a quick look at our gallery of clients to start brainstorming your ideas and get the right shape for your exhibition.</p>
+                    <a href="/Gallery.html" class="btn btn-sm mx-auto mt-3 " style="color: #ffffff;">Visit our Gallery</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ms-auto">
+            <div class="row justify-content-start">
+              <div class="col-md-6">
+                <div class="info">
+                  <h5 class="font-weight-bolder mt-3" style="color:#09ff00">Exceptional Craftsmanship</h5>
+                  <p class="pe-5">At MMello, we pride ourselves on delivering exceptional craftsmanship. Our skilled artisans pour their expertise into every detail, ensuring that your stand expo reflects the highest standards of quality and professionalism. Trust us to create a masterpiece that leaves a lasting impression on your audience.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info">
+                  <h5 class="font-weight-bolder mt-3" style="color:#09ff00">Elevate Your Brand Presence</h5>
+                  <p class="pe-3">Make a bold statement at expos with our immersive brand experiences. From captivating designs to interactive elements, we elevate your brand presence and set you apart from the competition. Let us help you make a memorable impression and solidify your position as an industry leader.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-start mt-5">
+              <div class="col-md-6 mt-3">
+                
+                <h5 class="font-weight-bolder mt-3" style="color:#09ff00">The sky is the limit</h5>
+                <p class="pe-5">Unleash your creativity with our stand expo services. We turn imagination into reality, creating immersive environments that captivate and inspire. Whether you have a specific theme in mind or seek unique design concepts, our creative experts bring your vision to life, leaving a lasting impression on expo attendees.</p>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="info">
+                  <h5 class="font-weight-bolder mt-3" style="color:#09ff00">Global Reach, Local Expertise</h5>
+                  <p class="pe-3">Expand your brand's horizons with our stand expo services offering global reach and local expertise. From new market exhibitions to establishing a strong presence, our international team understands cultural nuances. With a blend of global perspective and local knowledge, we deliver tailored solutions that resonate with your target audience, wherever you go. Trust us to make a seamless global impact.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------- START Content Presentation Docs ------- -->
+    <!-- -------- END Content Presentation Docs ------- -->
+    <section class="py-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="mb-0">Trusted by over</h2>
+            <h2 class="text-primary mb-3" style="color: #00d600 !important;">25.000+ Brands</h2>
+            <p class="lead">Many Fortune 500 companies, startups, universities and governmental institutions love Creative Tim's products. </p>
+          </div>
+        </div>
+        <div class="row mt-6">
+          <div class="col-lg-4 col-md-8">
+            <div class="card card-plain">
+              <div class="card-body">
+                <div class="author">
+                  <div class="name">
+                    <h6 class="mb-0 font-weight-bolder">Phillip M.</h6>
+                    <div class="stats">
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4">"I would like to extend my sincerest appreciation for the exceptional service, attention to detail, and top-notch professionalism demonstrated by your team at our recent collaboration. Your firm's dedication during the entire project, particularly in terms of design, was truly commendable. It was an absolute pleasure working with you and your team, as your "can do" attitude made every step of the process effortless. Our client was not only impressed but also delighted with the final outcome."</p>
+                <div class="rating mt-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8 ms-md-auto">
+            <div class="card bg-gradient-primary" style="background-image: linear-gradient(90deg, #00b80f 5%, #54ff3d 100%);">
+              <div class="card-body">
+                <div class="author align-items-center">
+                  <div class="name">
+                    <h6 class="text-white mb-0 font-weight-bolder">Miguel S.</h6>
+                    <div class="stats text-white">
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4 text-white">"Dear Marcia, I wanted to express my heartfelt gratitude for the outstanding service, meticulous attention to detail, and professional design delivered by your firm during Abrafati. It was an absolute pleasure working with you and Robson. Your "can do" attitude made the entire process seamless, and our client was immensely satisfied with the final outcome. I eagerly anticipate our next project, which I hope will materialize soon."</p>
+                <div class="rating mt-3">
+                  <i class="fas fa-star text-white"></i>
+                  <i class="fas fa-star text-white"></i>
+                  <i class="fas fa-star text-white"></i>
+                  <i class="fas fa-star text-white"></i>
+                  <i class="fas fa-star text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <div class="card card-plain">
+              <div class="card-body">
+                <div class="author">
+                  <div class="name">
+                    <h6 class="mb-0 font-weight-bolder">James M.</h6>
+                    <div class="stats">
+
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-4">"I am thrilled to cooperate with you, my friend. Our collaboration brings me great satisfaction. Together, we achieve remarkable results and make a positive impact. It's a pleasure to stand beside you, navigating challenges with confidence. Our strong bond and effective teamwork fill me with joy. Working together with you is truly rewarding, and I am grateful for the opportunity."</p>
+                <div class="rating mt-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="horizontal dark my-5">
+        <div class="row">
+          <h2 class="text-primary mb-3" style="color: #00d600 !important; font-size: 15px;">Trusted by:</h2>
+          <div class="col-lg-2 col-md-4 col-6 mx-auto">
+            <a href="https://intelextrememasters.com" target="_blank">
+            <img class="w-100 opacity-6" src="{{ ASSETS_ROOT }}/img/imgsm/IEM-Logo-on-Black_Horizontal_RGB.png" alt="Logo">
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mx-auto">
+            <a href="https://www.dhl.com" target="_blank">
+            <img class="w-100 opacity-6" src="{{ ASSETS_ROOT }}/img/imgsm/dhl_logo_icon_181317.png" alt="Logo">
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mx-auto">
+            <a href="https://www.newpostech.com/en/index.aspx" target="_blank">
+            <img class="w-100 opacity-6" src="{{ ASSETS_ROOT }}/img/imgsm/newpos-removebg-preview (1).png" alt="Logo">
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mx-auto">
+            <a href="https://en.greatstartools.com">
+            <img class="w-100 opacity-6" src="{{ ASSETS_ROOT }}/img/imgsm/imagem_2023-06-24_043604824-removebg-preview (1) (1).png" alt="Logo">
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mx-auto">
+            <a href="https://magnumboots.com" target="_blank">
+              <img class="w-100 opacity-6" src="{{ ASSETS_ROOT }}/img/imgsm/logo_magnum--black (1).png" alt="Logo">
+            </a>            
+          </div>
+        </div>  
+      </div>
+    </section>
+  </div>
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <a href="#">
+              <img src="{{ ASSETS_ROOT }}/img/imgsm/mmello_logo_site_horizontal_png.png" alt="main_logo">
+              <img src="{{ ASSETS_ROOT }}/img/imgsm/abracelogobranca.png" alt="Image description" width="141" height="71">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6" >
+          <div>
+            <a href="/author.html" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Mission</h6></a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div>
+            <a href="/about-us.html" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Team</h6></a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6">
+          <div>
+            <a href="https://example.com" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Gallery</h6></a>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 me-auto">
+          <div>
+            <a href="https://example.com" class="text-sm" style="color: #ebebeb;"><h6 style="color: #ebebeb;">Contact us</h6></a>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal" style="color: #ebebeb;">
+              <a href="https://bit.ly/3fKQZaL" target="_blank" style="color: #ebebeb;">© MMello</a><span style="color: #ebebeb;">- Coded By Reinelt</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!--   Core JS Files   -->
+  <script src="{{ ASSETS_ROOT }}/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="{{ ASSETS_ROOT }}/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="{{ ASSETS_ROOT }}/js/plugins/perfect-scrollbar.min.js"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+  <script src="{{ ASSETS_ROOT }}/js/plugins/countup.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+  <script src="{{ ASSETS_ROOT }}/js/plugins/rellax.min.js"></script>
+  <!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+  <script src="{{ ASSETS_ROOT }}/js/plugins/tilt.min.js"></script>
+  <!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+  <script src="{{ ASSETS_ROOT }}/js/plugins/choices.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="{{ ASSETS_ROOT }}/js/plugins/parallax.min.js"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="{{ ASSETS_ROOT }}/js/material-kit.min.js?v=3.0.0" type="text/javascript"></script>
+  <script type="text/javascript">
+    if (document.getElementById('state1')) {
+      const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
+      if (!countUp.error) {
+        countUp.start();
+      } else {
+        console.error(countUp.error);
+      }
+    }
+    if (document.getElementById('state2')) {
+      const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
+      if (!countUp1.error) {
+        countUp1.start();
+      } else {
+        console.error(countUp1.error);
+      }
+    }
+    if (document.getElementById('state3')) {
+      const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
+      if (!countUp2.error) {
+        countUp2.start();
+      } else {
+        console.error(countUp2.error);
+      };
+    }
+  </script>
+</script>
+
+</body>
+
+</html>
