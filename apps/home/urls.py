@@ -12,6 +12,7 @@ urlpatterns = [
     path('', views.index, name='home'),
 
     path('home/', views.index, name='gallery-index'),
+    path('sendemail.py/', views.send_email_view, name='send_email'),
     # Matches any html file
     re_path(r'^.*\.*', views.pages, name='pages'),
 
