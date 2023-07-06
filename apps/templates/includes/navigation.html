@@ -1,36 +1,47 @@
-  <!-- Navbar Transparent -->
-  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
-    <div class="container">
-      <a href="/index.html">
-        <img src="{{ ASSETS_ROOT }}/img/imgsm/mmello_logo_site_horizontal_png.png" alt="main_logo">
-      </a>
-      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon mt-2">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation" style="font-size: 30px;">
-        <ul class="navbar-nav navbar-nav-hover ms-auto">
+<!-- Navbar -->
+<div class="container position-sticky z-index-sticky top-0">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg  border-radius-xl mt-4 top-0 z-index-3  position-absolute my-3 py-2 start-0 end-0 mx-4" style="background-color: #242424;">
+        <div class="container">
+          <a href="/index.html">
+            <img src="{{ ASSETS_ROOT }}/img/imgsm/mmello_logo_site_horizontal_png.png" alt="main_logo">
+          </a>
+          <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation" style="font-size: 30px;">
+            <ul class="navbar-nav navbar-nav-hover ms-auto">
+                <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6" >
+                  <a href="/about-us.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px; color: aliceblue;">
+                    Team
+                  </a>
+                </li>
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="/gallery.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px;color: aliceblue;">
+                    Gallery
+                  </a>
+                </li>
+                
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="/recentlyasked.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px;color: aliceblue;">
+                    Q&A
+                  </a>
+                </li> 
 
-            <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6" >
-              <a href="/about-us.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px;">
-                Team
-              </a>
-            </li>
-            <li class="nav-item dropdown dropdown-hover mx-2">
-              <a href="/gallery.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px;">
-                Gallery
-              </a>
-            </li>
-
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a href="/contact-us.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px;">
-              Contact us
-            </a>            
-        </ul>
-      </div>
+                <li class="nav-item dropdown dropdown-hover mx-2">
+                  <a href="/contact-us.html" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="font-size: 18px;color: aliceblue;">
+                    Contact us
+                  </a>
+                </li>            
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-  <!-- End Navbar -->
+  </div>
+</div>
