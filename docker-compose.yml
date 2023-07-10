@@ -1,29 +1,12 @@
 version: '3.8'
 services:
-  appseed-app:
-    container_name: mmello
-    restart: always
-    env_file: .env
-    build: 
-     context: ./docker
-    networks:
-      - db_network
-      - web_network
-  nginx:
-    container_name: nginx
-    restart: always
-    image: "nginx:latest"
+  mmello.com:
+    build:
+      context: .
     ports:
-      - "5085:5085"
+      -"8000:8000"
     volumes:
-      - ./nginx:/etc/nginx/conf.d
-    networks:
-      - web_network
-    depends_on: 
-      - appseed-app
-networks:
-  db_network:
-    driver: bridge
-  web_network:
-    driver: bridge
- 
+      - ./mmello.com:/core
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DEBUG=1
