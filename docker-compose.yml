@@ -1,12 +1,29 @@
 version: '3.8'
 services:
   mmello.com:
-    build:
-      context: .
+    container_name: mmello
+    restart: always
+    env_file: .env
+    build: 
+     context: ./docker
+    networks:
+      - db_network
+      - web_network
+  nginx:
+    container_name: nginx
+    restart: always
+    image: "nginx:latest"
     ports:
-      -"8000:8000"
+      - "8000:8000"
     volumes:
-      - ./mmello.com:/core
-    command: sh -c "python manage.py runserver 0.0.0.0:8000"
-    environment:
-      - DEBUG=1
+      - ./nginx:/etc/nginx/conf.d
+    networks:
+      - web_network
+    depends_on: 
+      - appseed-app
+networks:
+  db_network:
+    driver: bridge
+  web_network:
+    driver: bridge
+ 
