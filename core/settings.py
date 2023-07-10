@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.home'  # Enable the inner home (home)
+    'apps.home',
+    'storages'  # Enable the inner home (home)
 ]
 
 MIDDLEWARE = [
@@ -137,13 +138,25 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = os.path.join(CORE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
+STATIC_URL = 'https://mmellospace.sfo3.digitaloceanspaces.com/mmellostaticfiles/'
+
+AWS_ACCESS_KEY_ID = 'DO00LZB2PMA2XMAVB9LE'
+AWS_SECRET_ACCESS_KEY = 'gQUfOxjGLYKPKMwsI42dxlt3sh1zItIaQ6jt67UcH0U'
+AWS_STORAGE_BUCKET_NAME = 'mmellospace'
+AWS_S3_ENDPOINT_URL = 'https://mmellospace.sfo3.digitaloceanspaces.com'
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+AWS_LOCATION = 'mmellostaticfiles'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(CORE_DIR, 'apps/static'),
 )
 
+STATIC_URL = 'https://mmellospace.sfo3.digitaloceanspaces.com/mmellostaticfiles/'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 #############################################################
 #############################################################
